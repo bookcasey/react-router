@@ -1,14 +1,15 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Users from './Users';
-import UserProfile from './User';
-import UsersList from './UsersList';
+import TodoForm from './TodoForm';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <h1><Link to='/'>My App</Link></h1>
+
+        <TodoForm />
 
         <Switch>
           <Route path='/users'>
